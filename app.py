@@ -7,6 +7,7 @@ app = flask.Flask(__name__)
 def hello():
     return "Hello World!"
 
+@app.route("/api/word_tokenize", methods=['GET','POST'])
 @app.route("/api/v1/word_tokenize", methods=['GET','POST'])
 def word_tokenize_api():
 	if flask.request.method == 'POST':
