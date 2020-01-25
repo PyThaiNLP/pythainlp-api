@@ -1,2 +1,2 @@
-# pythainlp_webservice
-Webservice for PyThaiNLP
+# PyThaiNLP API
+Web API for PyThaiNLP 
