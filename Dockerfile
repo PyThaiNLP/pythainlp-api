@@ -4,6 +4,7 @@ WORKDIR /app
 EXPOSE 8000
 
 COPY requirements.txt ./
+RUN apt-get update
 RUN apt-get install -y python3-dev
 RUN pip install -r requirements.txt
 
