@@ -1,2 +1,4 @@
-flask
+fastapi
 pythainlp
+uvicorn
+pytest
