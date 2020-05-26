@@ -1,13 +1,14 @@
 # -*- coding: utf-8 -*-
 from fastapi import Depends, FastAPI, Header, HTTPException
 from routers import tag, tokenize
+from pythainlp import __version__
 
 app = FastAPI()
 
 
 @app.get("/")
 def hello():
-    return {"Hello": "World"}
+    return {"pythainlp": __version__}
 
 
 app.include_router(tag.router)

@@ -4,6 +4,7 @@ WORKDIR /usr/src/app
 EXPOSE 8000
 
 COPY requirements.txt ./
+RUN apt-get install python3-dev
 RUN pip install -r requirements.txt
 
 COPY . .
