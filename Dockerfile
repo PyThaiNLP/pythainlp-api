@@ -1,10 +1,10 @@
-FROM python:3.6-stretch
+FROM python:3.6
 MAINTAINER Wannaphong Phatthiyaphaibun <wannaphong@kkumail.com>
-WORKDIR /usr/src/app
+WORKDIR /app
 EXPOSE 8000
 
 COPY requirements.txt ./
-RUN apt-get install python3-dev
+RUN apt-get install -y python3-dev
 RUN pip install -r requirements.txt
 
 COPY . .
